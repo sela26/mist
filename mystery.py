@@ -9,8 +9,8 @@ def check_password():
     if st.button("Bestätigen"):
         if password_input == correct_password:
             st.balloons()
-            st.success("Richtig! 😍 Hier ist deine geheime Nachricht: 🤩         "
-                       "Hey Julian, wir müssen reden. Und zwar nicht über irgendeine Reise, sondern über die Reise – unsere vier Wochen "
+            st.success("Richtig! 😍 Hier ist deine geheime Nachricht: 🤩         ")
+            st.success("Hey Julian, wir müssen reden. Und zwar nicht über irgendeine Reise, sondern über die Reise – unsere vier Wochen "
                        "in Thailand! Und bevor du mit „Ich war da ja schon mal“ anfängst, lass mich kurz erklären, warum das hier eine ganz "
                        "andere Liga wird. Erstens: Drei befreundete Pärchen zusammen in einem der schönsten Länder der Welt – das wird nicht "
                        "nur eine Reise, das wird ein Highlight deines Lebens. Und hey, deine Freundin ist auch am Start! Stell dir mal vor: "
@@ -29,7 +29,7 @@ def check_password():
                        "Beste Grüße!! Deine Freunde ")
             c1, c2 = st.columns(2)
             with c1:
-                st.image("https://unsplash.com/de/fotos/zwei-auto-rikschas-auf-der-strasse--y3sidWvDxg")
+                st.image("https://images.unsplash.com/photo-1512553353614-82a7370096dc?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fHRoYWlsYW5kfGVufDB8fDB8fHww")
             with c2:
                 st.image("https://images.unsplash.com/photo-1496275068113-fff8c90750d1?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNlYSUyMEZyaWVuZHN8ZW58MHx8MHx8fDA%3D")
             
