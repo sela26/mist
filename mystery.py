@@ -27,6 +27,12 @@ def check_password():
                        "der Inbegriff von Genussurlaub. Fazit: Du musst mit! Tauchgänge, Muay Thai, geile Strände, bestes Essen, "
                        "top Gesellschaft – und eine Reise, über die wir noch ewig reden werden. Sag einfach „Ja“ und wir legen los! 😉"
                        "Beste Grüße!! Deine Freunde ")
+            c1, c2 = st.columns(2)
+            with c1:
+                st.image("https://unsplash.com/de/fotos/zwei-auto-rikschas-auf-der-strasse--y3sidWvDxg")
+            with c2:
+                st.image("https://images.unsplash.com/photo-1496275068113-fff8c90750d1?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNlYSUyMEZyaWVuZHN8ZW58MHx8MHx8fDA%3D")
+            
             st.write("🚀 Glückwunsch! Du hast das Geheimnis entschlüsselt!")
         else:
             st.error("Falsches Passwort. Versuche es erneut.")
@@ -35,7 +41,7 @@ def check_password():
 def password_game():
     """Ein einfaches Wortspiel, um das Passwort herauszufinden."""
     st.write("## Spiel: Finde das richtige Wort!")
-    st.write("Das Passwort ist ein Anagramm des Wortes 'MEHIGA'!")
+    st.write("Das Passwort ist ein Anagramm des Wortes 'MEHIGE'!")
 
     answer = "geheim"
     user_answer = st.text_input("Was ist das richtige Wort?")
@@ -44,7 +50,7 @@ def password_game():
         if user_answer.lower() == answer:
             st.success("Richtig! Das Passwort ist: geheim123")
         else:
-            st.error("Falsch! Versuche es erneut.")
+            st.error("Falsch! Versuche es erneut. Tipp: Das Wort ist gar nicht so schwer zu erraten.")
 
 
 def main():
